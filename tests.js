@@ -5,13 +5,14 @@ describe('HMS Seconds', function () {
     it('Should convert seconds', function () {
         chai.assert.equal(hmsTime(0), '0:00:00.000');
         chai.assert.equal(hmsTime(1), '0:00:01.000');
+        chai.assert.equal(hmsTime(2.83), '0:00:02.830');
         chai.assert.equal(hmsTime(15), '0:00:15.000');
     });
 
     it('Should convert minutes', function () {
         chai.assert.equal(hmsTime(60), '0:01:00.000');
         chai.assert.equal(hmsTime(61), '0:01:01.000');
-        chai.assert.equal(hmsTime(61), '0:01:01.000');
+        chai.assert.equal(hmsTime(61.1231), '0:01:01.123');
         chai.assert.equal(hmsTime(120), '0:02:00.000');
         chai.assert.equal(hmsTime(130), '0:02:10.000');
     });

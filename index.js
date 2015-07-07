@@ -53,13 +53,14 @@ var hmsTime = function (seconds) {
     if (seconds > 59) {
         minutes = getMinutes(seconds);
         seconds = takeOffMinutes(seconds, minutes);
-        milliseconds = getMillisecondsFromAfterDecimal(seconds);
-        seconds = takeOffMilliseconds(seconds);
     }
 
     if ((seconds > 0) && (seconds < 1)) {
         milliseconds = getMilliseconds(seconds);
         seconds = 0;
+    } else {
+        milliseconds = getMillisecondsFromAfterDecimal(seconds);
+        seconds = takeOffMilliseconds(seconds);
     }
 
     if (minutes > 59) {
