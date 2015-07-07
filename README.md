@@ -1,7 +1,7 @@
 HMS Time
 ========
 
-Ahoy! All aboard the HMS Time! Got a lot of seconds you want converted into H:MM:SS:MMM (hours, minutes, seconds and milliseconds).
+Ahoy! All aboard the HMS Time! Got a lot of seconds you want converted into H:MM:SS.SSS (hours, minutes, seconds and milliseconds).
 
 Works especially well with the Web Audio API.
 
