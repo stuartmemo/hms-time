@@ -1,0 +1,22 @@
+{
+  "name": "hms-time",
+  "version": "0.1.0",
+  "description": "All aboard the HMS Time - takes number of seconds and converts it to HH:MM:SS.SSS format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "keywords": [
+    "time",
+    "seconds",
+    "web",
+    "audio"
+  ],
+  "author": "Stuart Memo <stuartmemo@gmail.com> (http://stuartmemo.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "gulp": "^3.9.0",
+    "gulp-mocha": "^2.1.2"
+  }
+}
