@@ -42,7 +42,7 @@ var isInteger = function (n) {
     return n % 1 === 0;
 }
 
-var hmsTime = function (seconds) {
+var hmsTime = function (seconds, simple) {
     var hours = '0',
         minutes = '00',
         milliseconds = '000';
@@ -96,6 +96,19 @@ var hmsTime = function (seconds) {
     }
 
     // Return formatted string.
+
+    if (simple) {
+        if (hours === '0') {
+            if (minutes === '00') {
+                return seconds + '.' + milliseconds;
+            } else {
+                return minutes + ':' + seconds;
+            }
+        } else {
+            return hours + ':' + minutes + ':' + seconds;
+        }
+    }
+
     return hours + ':' + minutes + ':' + seconds + '.' + milliseconds;
 };
 

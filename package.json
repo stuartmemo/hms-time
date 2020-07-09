@@ -12,11 +12,11 @@
     "web",
     "audio"
   ],
-  "author": "Stuart Memo <stuartmemo@gmail.com> (http://stuartmemo.com/)",
+  "author": "Stuart Memo <stuartmemo@gmail.com> (https://stuartmemo.com)",
   "license": "MIT",
   "devDependencies": {
-    "chai": "^3.0.0",
-    "gulp": "^3.9.0",
-    "gulp-mocha": "^2.1.2"
+    "chai": "^4.2.0",
+    "gulp": "^4.0.2",
+    "gulp-mocha": "^7.0.2"
   }
 }
