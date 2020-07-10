@@ -38,13 +38,15 @@ describe('HMS Seconds', function () {
     });
 
     describe('With simple flag', function () {
-        it('Should only show milliseconds if hours and minutes are zero', function () {
-            chai.assert.equal(hmsTime(0.5, true), '00.500');
+        it('Should never show milliseconds', function () {
+            chai.assert.equal(hmsTime(0.5, true), '00:00');
+            chai.assert.equal(hmsTime(1, true), '00:01');
         });
 
         it('Should only show hours if not zero', function () {
             chai.assert.equal(hmsTime(3600, true), '1:00:00');
             chai.assert.equal(hmsTime(1800.005, true), '30:00');
+            chai.assert.equal(hmsTime(9059.1, true), '2:30:59');
         });
     });
 });

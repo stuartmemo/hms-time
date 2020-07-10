@@ -99,11 +99,7 @@ var hmsTime = function (seconds, simple) {
 
     if (simple) {
         if (hours === '0') {
-            if (minutes === '00') {
-                return seconds + '.' + milliseconds;
-            } else {
-                return minutes + ':' + seconds;
-            }
+            return minutes + ':' + seconds;
         } else {
             return hours + ':' + minutes + ':' + seconds;
         }
