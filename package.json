@@ -1,6 +1,6 @@
 {
   "name": "hms-time",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "All aboard the HMS Time - takes number of seconds and converts it to HH:MM:SS.SSS format.",
   "main": "index.js",
   "scripts": {
